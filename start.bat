@@ -20,6 +20,7 @@ if %errorLevel% neq 0 (
 :: ========== RUNNING AS ADMINISTRATOR ==========
 title Windows Monitoring Stack - Starting with NSSM...
 color 0A
+echo Running as: Administrator ✓
 
 echo ============================================
 echo    Windows Server Monitoring Stack
