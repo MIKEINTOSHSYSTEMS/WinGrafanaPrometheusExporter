@@ -9,21 +9,23 @@ WinGrafanaPrometheusExporter/
 ├── Grafana/
 │   └── docker-compose.yml
 ├── Prometheus/
-│   ├── prometheus.exe
+│   ├── prometheus.exe        (will be downloaded)
 │   ├── prometheus.yml
-│   ├── promtool.exe
-│   ├── LICENSE
-│   └── NOTICE
+│   ├── promtool.exe          (will be downloaded)
+│   ├── LICENSE               (optional copy)
+│   └── NOTICE                (optional copy)
 ├── windows_exporter/
 │   ├── windows_exporter.exe
 │   ├── config.yaml
 │   └── textfile_inputs/
-├── start.bat                (Main installation script)
-├── stop.bat                 (Stop all services)
-├── restart.bat              (Restart all services)
-├── status.bat               (Check service status)
-├── uninstall.bat            (Remove all services)
-└── README.md                (This file)
+├── onetimefetch.bat          (new - download Prometheus binaries)
+├── onetimefetch.ps1          (optional PowerShell version)
+├── start.bat
+├── stop.bat
+├── restart.bat
+├── status.bat
+├── uninstall.bat
+└── README.md
 ```
 
 
@@ -265,6 +267,29 @@ cd WinGrafanaPrometheusExporter
 ```
 
 ### **Step 2: Run the Installation**
+
+Start fetching the Prometheus services (Double Click on it or run it as Admin)
+
+```cmd
+.\run-onetimefetch.bat
+```
+or Individual alternatives below
+
+Option 1: Run onetimefetch.bat as Administrator by Rightclicking and Click on Run As Administrator:
+
+```cmd
+.\onetimefetch.bat
+```
+
+OR
+
+Option 2: Run the onetimefetcher In Powershell where the file exists:
+```powershell
+powershell -ExecutionPolicy Bypass -File onetimefetch.ps1
+```
+
+Then
+
 ```cmd
 start.bat
 ```
