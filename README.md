@@ -341,6 +341,27 @@ docker-compose up -d
    - Select Prometheus data source
    - Click "Import"
 
+
+
+## 🛠️ NSSM Service Management
+
+This project uses **NSSM (Non-Sucking Service Manager)** for superior Windows service management with features like:
+
+- **Automatic restarts** if services crash
+- **Better logging** to `logs/` directory
+- **Easy configuration** via GUI
+- **Reliable service control**
+
+### **If NSSM is missing:**
+Run `download-nssm.bat` to automatically download it, or manually:
+1. Download from: https://nssm.cc/download
+2. Place `nssm.exe` in the `svc/` folder
+
+### **Advanced NSSM Management:**
+Run `nssm-manage.bat` for granular control over services.
+
+
+
 ## 📊 Dashboard Preview
 
 Dashboard ID **24390** provides:
