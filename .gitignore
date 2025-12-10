@@ -2,3 +2,4 @@ Prometheus/data/
 Prometheus/*.exe
 logs
 Run
+*.code-workspace
